@@ -1,1 +1,244 @@
-@import "~bootstrap/scss/bootstrap";
+// Configuration
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+
+// Layout & components
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/offcanvas";
+
+// Helpers
+@import "~bootstrap/scss/helpers";
+
+// Utilities
+@import "~bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+// swiper
+@import "../node_modules/swiper/swiper-bundle.css";
+
+// my styles
+@import "styles/footer";
+@import "styles/header";
+@import "styles/swiper";
+@import "styles/cards_profile";
+
+.fs-header {
+  font-size: 44px;
+}
+
+@media (min-width: 360px) {
+  .fs-header {
+    font-size: 44px;
+  }
+}
+@media (min-width: 768px) {
+  .fs-header {
+    font-size: 52px;
+  }
+}
+@media (min-width: 992px) {
+  .fs-header {
+    font-size: 64px;
+  }
+}
+@media (min-width: 1366px) {
+  .fs-header {
+    font-size: 70px;
+  }
+}
+
+.fs-about {
+  font-size: 35px;
+}
+
+@media (min-width: 360px) {
+  .fs-about {
+    font-size: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .fs-about {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .fs-about {
+    font-size: 44px;
+  }
+}
+@media (min-width: 1366px) {
+  .fs-about {
+    font-size: 45px;
+  }
+}
+
+.fs-text {
+  font-size: 30px;
+}
+.p-text {
+  font-size: 16px;
+}
+
+@media (min-width: 360px) {
+  .fs-text {
+    font-size: 30px;
+  }
+  .p-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .fs-text {
+    font-size: 33px;
+  }
+}
+@media (min-width: 992px) {
+  .fs-text {
+    font-size: 38px;
+  }
+  .p-text {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1366px) {
+  .fs-text {
+    font-size: 46px;
+  }
+  .p-text {
+    font-size: 18px;
+  }
+}
+
+.card-tours {
+  width: 280px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-top: 30px;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+.card-tours:hover {
+  transform: translateY(20px);
+}
+.card-tours:hover:before {
+  opacity: 1;
+}
+.card-tours:hover .info {
+  opacity: 1;
+  transform: translateY(0px); 
+}
+.card-tours:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.card-tours .img-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.card-tours .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+.card-tours .info .card-tours-h1 {
+  margin: 0px;
+}
+.card-tours .info .card-tours-p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.card-tours .info .card-tours-button {
+  text-decoration: none;
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.card-tours .info .card-tours-button:hover {
+  background: dodgerblue;
+  color: white;
+}
+
+.form-home {
+  border: none;
+  border-bottom: 3px solid #ced4da;
+  border-radius: 0px;
+  padding: 0;
+}
+
+.fs-mini {
+  font-size: 15px;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.w-md-75 {
+  max-width: 75%;
+}
+
+@media (max-width: 768px) {
+  .w-md-75 {
+    max-width: 100%;
+  }
+}

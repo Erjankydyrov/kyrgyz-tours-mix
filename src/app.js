@@ -21,27 +21,27 @@ const swiper = new Swiper('.swiper', {
     },
     // when window width is >= 480px
     700: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 30
     },
     // when window width is >= 640px
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 60
     },
     // when window width is >= 640px
     1440: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 60
     },
     // when window width is >= 640px
     1850: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 60
     },
     // when window width is >= 640px
     2350: {
-      slidesPerView: 6,
+      slidesPerView: 5,
       spaceBetween: 60
     },
   }

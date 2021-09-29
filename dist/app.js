@@ -3145,7 +3145,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var swiper = new Swiper('.swiper', {
+var swiper = new Swiper(".swiper", {
   // centeredSlides: true,
   // Default parameters
   slidesPerView: 1,

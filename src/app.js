@@ -46,3 +46,21 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+const newSwiper = new Swiper(".mySwiper2", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+let linkMore = document.querySelector(".link-more"),
+  text = document.querySelector(".text");
+
+  linkMore.onclick = function (e) {
+  e.preventDefault();
+  text.classList.toggle("text-open");
+};

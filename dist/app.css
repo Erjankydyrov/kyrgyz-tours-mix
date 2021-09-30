@@ -11897,6 +11897,15 @@ footer ul li {
     max-width: 100%;
   }
 }
+.w-md-75-home {
+  max-width: 75%;
+}
+
+@media (max-width: 600px) {
+  .w-md-75-home {
+    max-width: 100%;
+  }
+}
 .p-sm-0 {
   padding: 0 24px;
 }

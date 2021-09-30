@@ -11897,3 +11897,36 @@ footer ul li {
     max-width: 100%;
   }
 }
+.tour-card {
+  width: 350px;
+  background-color: #fff;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tour-card:hover .tour-card-image img {
+  transform: scale(1.1);
+}
+
+.tour-card-image {
+  padding-top: 67%;
+  position: relative;
+  overflow: hidden;
+}
+.tour-card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.tour-card-data {
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
